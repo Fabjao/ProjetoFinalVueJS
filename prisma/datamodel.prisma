@@ -20,7 +20,7 @@ type Category {
   id: ID! @unique
   user: User
   description: String!
-  operation: Operation
+  operation: Operation!
 }
 
 type Record{
