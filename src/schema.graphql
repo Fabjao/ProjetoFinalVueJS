@@ -33,7 +33,7 @@ type Mutation {
       note: String
   ): Record!
   login(email: String!, password: String!): AuthPayload
-  singup(email: String!, password: String!, name: String!): AuthPayload
+  signup(email: String!, password: String!, name: String!): AuthPayload
 }
 
 type  AuthPayload {

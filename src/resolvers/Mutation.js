@@ -95,7 +95,7 @@ async function login(_, { email, password }, ctx, info) {
 }
 
 
-async function singup(_, args, ctx, info) {
+async function signup(_, args, ctx, info) {
 
   const password = await bcrypt.hash(args.password, 10)
   const user = await ctx.db.mutation.createUser({
@@ -120,5 +120,5 @@ module.exports = {
   createCategory,
   createRecord,
   login,
-  singup
+  signup
 }
