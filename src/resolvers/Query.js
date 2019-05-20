@@ -76,7 +76,7 @@ function records(_, { month, type, accountsIds, categoriesIds }, ctx, info) {
 
 function totalBalance(parent, {date}, ctx, info) {
   const userId = getUserId(ctx)
-  const dateISO = moment(date, 'YYYY-MM-DD').endOf('day').toISOString();
+  const dateISO = moment(date, 'YYYY-MM-DD').endOf('day').toISOString()  
   const pgSchema = `${process.env.PRISMA_SERVICE}$${process.env.PRISMA_STAGE}`
 
   const mutation = `
